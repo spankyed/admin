@@ -1,0 +1,59 @@
+
+//@import './node_modules/carbon-components/scss/components/button/button';
+
+//@import "~tailwindcss/base";
+@import "./node_modules/tailwindcss/base";
+
+@import "./node_modules/tailwindcss/components";
+
+.bg-wurp {
+    background: #efecea;
+}
+.bg-yurp {
+    background: #f9c535;
+}
+
+.bg-reddish {
+    background: #e04462;
+}
+.bg-black-alt {
+    background: #191919;
+}
+
+.bg-yellow {
+    background-color: #fcc81e;
+}
+.bg-black-alpha-30 {
+    background-color: rgba(0, 0, 0, .3);
+}
+.text-yellow{
+    color: #fcc81e !important;
+    text-shadow: 0px 2px 3px #555;
+}
+.border-white{
+    border-color: #efecea;
+}
+.sm\:w-45 {
+    width: 45%;
+}
+.title {
+    font: 84px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  
+ /**
+.btn {
+    @apply bg-teal-700 text-white text-sm border-none rounded font-bold p-3 mt-2;
+}
+.btn:hover {
+    @apply bg-teal-900;
+}
+*/
+  
+@import "./node_modules/tailwindcss/utilities";
+
+
+
