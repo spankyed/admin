@@ -16,17 +16,20 @@ const content = Content(data.content)
 
 const state = {
   location: location.state, 
+  nav: Nav.state,
   tasks: tasks.state,
   content: content.state
 }
 
 const actions = {
   location: location.actions,
+  nav: Nav.actions,
   tasks: tasks.actions,
   content: content.actions
 }
 
 const view = ( state, actions ) => {
+  const Navbar = Nav.view(state.nav, actions.nav)
   const index = {
     tasks: tasks.view(state.tasks, actions.tasks),
     content: content.view(state.content, actions.content)
@@ -34,7 +37,7 @@ const view = ( state, actions ) => {
   
   return (
     <div>
-      <Nav></Nav>
+      <Navbar path={ state.location.pathname }></Navbar>
       <Switch>    
         <Route path="/" render={ Home } />   
         <Route parent path="/tasks" render={ index.tasks } />    
