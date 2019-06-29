@@ -11,7 +11,7 @@ export default initial => ({
   view: (state, actions) => ({match}) => {
     var easyMDE;
     const init = (e) => {
-      var easyMDE = new EasyMDE({element: document.getElementById('mde')});
+      easyMDE = new EasyMDE({element: document.getElementById('mde')});
     }
     const destroy = () => {
       easyMDE.toTextArea()
